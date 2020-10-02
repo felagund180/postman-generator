@@ -1,0 +1,54 @@
+{
+    "name": "ab/api-generator",
+    "description": "Collection Generator for Postman",
+    "keywords": [
+        "ab",
+        "api-generator"
+    ],
+    "homepage": "https://github.com/ab/api-generator",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ab",
+            "email": "felagund180@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "laravel/framework": "^7.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ab\\ApiGenerator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ab\\ApiGenerator\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ab\\ApiGenerator\\ApiGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "ApiGenerator": "Ab\\ApiGenerator\\ApiGeneratorFacade"
+            }
+        }
+    }
+}
