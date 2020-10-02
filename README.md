@@ -18,7 +18,7 @@ composer require ab/api-generator
 ## Usage
 
 ``` php
-// Usage description here
+php artisan api:generate
 ```
 
 ### Testing
