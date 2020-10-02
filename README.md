@@ -1,11 +1,11 @@
-# Very short description of the package
+# Postman Collection Generator
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ab/api-generator.svg?style=flat-square)](https://packagist.org/packages/ab/api-generator)
 [![Build Status](https://img.shields.io/travis/ab/api-generator/master.svg?style=flat-square)](https://travis-ci.org/ab/api-generator)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ab/api-generator.svg?style=flat-square)](https://scrutinizer-ci.com/g/ab/api-generator)
 [![Total Downloads](https://img.shields.io/packagist/dt/ab/api-generator.svg?style=flat-square)](https://packagist.org/packages/ab/api-generator)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+A laravel Command to generate a json file for Postman Collection.
 
 ## Installation
 
@@ -41,7 +41,7 @@ If you discover any security related issues, please email felagund180@gmail.com 
 
 ## Credits
 
-- [Ab](https://github.com/ab)
+- [Ab](https://github.com/felagund180)
 - [All Contributors](../../contributors)
 
 ## License
