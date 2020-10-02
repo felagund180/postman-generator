@@ -129,8 +129,7 @@ class Generate extends Command
             }
 
             $reflectionClass = new ReflectionClass($controller);
-            $docComment      = $reflectionClass->getMethod($method)->getDocComment();
-            if ($docComment !== false) {
+            if (($docComment = $reflectionClass->getMethod($method)->getDocComment()) !== false) {
                 $docBlock    = $this->factory->create($reflectionClass->getMethod($method)->getDocComment());
                 $description = $docBlock->getSummary() . "\n\n---\n\n";
             }
